@@ -30,7 +30,7 @@ python src/main.py
 
 ### Agent Workflow
 
-![workflow](/images/workflow.png)
+<img src="/images/workflow.png" height="600">
 
 ### Interface Description
 
