@@ -47,7 +47,7 @@ python src/main.py
 
 ### Interface Description
 
-> [!IMP]
+> [!IMPORTANT]
 > The initial category classification and confidence score will not be visible on the frontend.
 > You can see them on the CLI where the application is running.
 
