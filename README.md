@@ -1,1 +1,56 @@
-# structured-output-for-swiggy
+# Structured Output Generator
+
+Convert any query to a structured JSON format by using only natural language.
+
+### Setting Up
+
+1. Clone this repository
+
+```
+git clone https://github.com/purusharthmalik/structured-output-generator.git
+cd structured-output-generator
+```
+
+2. Create a new environment and install the dependencies
+
+```
+pip install uv
+uv venv
+source .venv/bin/activate
+uv pip install -r requirements.txt
+```
+
+3. Set the `GROQ_API_KEY` in the `.env` file.
+
+4. Start the application
+
+```
+python src/main.py
+```
+
+### Agent Workflow
+
+![workflow](/images/workflow.png)
+
+### Interface Description
+
+![initial screen](/images/init_screen.png)
+
+### Example Runs
+
+- For `Dining` category,
+![dining](/images/dining_test.png)
+
+- For `Travel` category,
+![travel](/images/travel_test.png)
+
+- For `Gifting` category,
+![gifting](/images/gifting_test.png)
+
+- For `Cab Booking` category,
+![cab booking](/images/cab_booking_test.png)
+
+- For `Other` category,
+![other](/images/other_test.png)
+
+More details about the sample runs can be found in the [sample document](sample_doc.txt).
