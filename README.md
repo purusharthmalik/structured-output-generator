@@ -28,6 +28,9 @@ uv pip install -r requirements.txt
 python src/main.py
 ```
 
+>![Note]
+>The application will be started at `http://127.0.0.1:7860` by default.
+
 ### Agent Workflow
 
 - The initial user query is classified into one of the pre-defined categories.
