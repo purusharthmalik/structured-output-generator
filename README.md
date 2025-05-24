@@ -30,6 +30,10 @@ python src/main.py
 
 ### Agent Workflow
 
+- The initial user query is classified into one of the pre-defined categories.
+- If the category is "Other", a function is called that retrieves URLs from Google.
+- Otherwise the initial query is used to fill the pre-defined fields for a particular category.
+- User is prompted questions till all the fields are filled.
 <img src="/images/workflow.png" height="600">
 
 ### Interface Description
@@ -53,4 +57,4 @@ python src/main.py
 - For `Other` category,
 ![other](/images/other_test.png)
 
-More details about the sample runs can be found in the [sample document](sample_doc.txt).
+More details about the sample runs can be found in the [sample document](sample_doc.md).
