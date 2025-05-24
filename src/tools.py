@@ -1,5 +1,5 @@
-from duckduckgo_search import DDGS
+from googlesearch import search
 
 def web_search(query):
-    """Perform a web search using DuckDuckGo and return the results."""
-    return DDGS().text(query, max_results=5, safesearch='Moderate')
+    """Perform a web search"""
+    return search(query, num_results=3)

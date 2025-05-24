@@ -47,6 +47,8 @@ def category_classification(state: State):
     next_state = state.copy()
     next_state["category"] = CLASS_MAP[init_response.category]
     next_state["confidence"] = init_response.confidence
+    print("Category:", next_state["category"])
+    print("Confidence:", next_state["confidence"])
     return next_state
 
 def generate_response(state: State):
@@ -157,6 +159,7 @@ def process_message(message, chat_history):
     
     if workflow_graph is None:
         workflow_graph = create_workflow()
+        # print(workflow_graph.get_graph().draw_mermaid())
     
     if current_workflow_state and current_workflow_state.get("waiting_for_clarification"):
         current_workflow_state = process_clarification(current_workflow_state, message)
@@ -221,7 +224,7 @@ def format_output(response_dict):
     try:
         for key, value in response_dict.items():
             formatted += f"**{key.replace('_', ' ').title()}:** {value}\n\n"
-        formatted + "### Raw JSON Format:\n" + json.dumps(response_dict)
+        formatted = formatted + "### Raw JSON Format:\n" + json.dumps(response_dict)
     except:
         formatted += "Since the request is not in any of the above mentioned categories, here are the URLs I found from a quick web search:\n\n"
         for idx, url in enumerate(response_dict):
@@ -290,4 +293,4 @@ def create_interface():
 
 if __name__ == "__main__":
     demo = create_interface()
-    demo.launch(debug=True)
+    demo.launch()

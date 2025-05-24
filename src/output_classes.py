@@ -24,7 +24,7 @@ class Travel(BaseModel):
 class Gifting(BaseModel):
     """Variables for the gifting category"""
     occasion: str = Field(description="Occasion for the gift")
-    age: str = Field(description="Age of the recipient")
+    recipient_age: str = Field(description="Age of the recipient")
     budget: Optional[str] = Field(description="Budget for the gift")
     interests: Optional[str] = Field(description="Interests or hobbies of the recipient")
     other_requests: Optional[str] = Field("Any other requests or preferences")
