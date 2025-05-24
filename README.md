@@ -16,7 +16,13 @@ cd structured-output-generator
 ```
 pip install uv
 uv venv
+
+# For Linux and Mac
 source .venv/bin/activate
+
+# For Windows
+.venv\Scripts\activate
+
 uv pip install -r requirements.txt
 ```
 
