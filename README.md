@@ -26,7 +26,7 @@ source .venv/bin/activate
 uv pip install -r requirements.txt
 ```
 
-3. Set the `GROQ_API_KEY` in the `.env` file.
+3. Set the `GROQ_API_KEY` in your environment variables or create a `.env` file in the `src` folder and set the API key there.
 
 4. Start the application
 
@@ -46,6 +46,10 @@ python src/main.py
 <img src="/images/workflow.png" height="600">
 
 ### Interface Description
+
+> [!IMP]
+> The initial category classification and confidence score will not be visible on the frontend.
+> You can see them on the CLI where the application is running.
 
 ![initial screen](/images/init_screen.png)
 
