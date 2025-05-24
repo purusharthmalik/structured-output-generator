@@ -2,6 +2,9 @@
 
 Convert any query to a structured JSON format by using only natural language.
 
+> [!NOTE]
+> A small video of a sample run is available [here](sample_run.mp4).
+
 ### Setting Up
 
 1. Clone this repository
